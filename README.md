@@ -25,8 +25,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL here](https://your-solution-url.com)
-- Live Site URL: [live site URL here](https://www.frontendmentor.io/solutions/intro-component-with-sign-up-form-with-htmlsassjavasript-c57E0Xs_F)
+- Solution URL: [solution URL here](https://www.frontendmentor.io/solutions/intro-component-with-sign-up-form-with-htmlsassjavasript-c57E0Xs_F)
+- Live Site URL: [live site URL here](https://confident-raman-67b078.netlify.app/)
 
 ## My process
 
