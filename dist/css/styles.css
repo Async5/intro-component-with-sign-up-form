@@ -1,0 +1,240 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ff7a7a;
+  color: white;
+}
+
+main {
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(/app/images/bg-intro-desktop.png);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media screen and (max-width: 37.5rem) {
+  main {
+    background-image: url(/app/images/bg-intro-mobile.png);
+  }
+}
+
+h1 {
+  font-size: 1.6875rem;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 5.625rem;
+  margin-bottom: 1.25rem;
+}
+
+@media screen and (min-width: 64rem) {
+  h1 {
+    padding-top: 0;
+    text-align: left;
+    line-height: 105%;
+    font-size: 3.125rem;
+  }
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 165%;
+  border-radius: 0.75rem;
+  padding: 1.0625rem 0rem;
+  background-color: #6055a5;
+  margin-top: 4.0625rem;
+  margin-bottom: 1.5rem;
+  -webkit-box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 64rem) {
+  h2 {
+    margin-top: 0;
+  }
+}
+
+h2 .wrapper-span {
+  display: inline-block;
+  width: 70%;
+  margin: 0 auto;
+}
+
+h2 .wrapper-span span {
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  font-size: 400;
+  text-align: center;
+  line-height: 150%;
+}
+
+@media screen and (min-width: 64rem) {
+  p {
+    text-align: left;
+  }
+}
+
+.container {
+  width: calc(100% - 1.5625rem * 2);
+  max-width: 69.375rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 64rem) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+  }
+  .container-left, .container-right {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+}
+
+main form {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5625rem;
+  -webkit-box-shadow: 0px 0.5125rem 0px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0.5125rem 0px 0px rgba(0, 0, 0, 0.2);
+}
+
+main form .form-control {
+  position: relative;
+}
+
+main form .form-control input {
+  padding: 1.3125rem;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.375rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+main form .form-control input::-webkit-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+main form .form-control input:-ms-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+main form .form-control input::-ms-input-placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+main form .form-control input::placeholder {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+main form .form-control:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+main form .form-control small {
+  display: none;
+}
+
+main form .form-control img {
+  display: none;
+}
+
+main form .form-control.error input {
+  border-color: red;
+}
+
+main form .form-control.error img {
+  display: block;
+  position: absolute;
+  top: 21%;
+  right: 2rem;
+}
+
+main form .form-control.error small {
+  display: block;
+  font-size: 0.8125rem;
+  color: #ff7a7a;
+  font-style: italic;
+  margin-top: 0.3125rem;
+  text-align: right;
+}
+
+main form button {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #38cc8c;
+  height: 3.5rem;
+  border-radius: 0.375rem;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+  -webkit-box-shadow: 0px 0.3125rem 0px 0px #2fbb7e;
+          box-shadow: 0px 0.3125rem 0px 0px #2fbb7e;
+}
+
+main form button:hover {
+  opacity: 0.8;
+}
+
+main form button:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+main form small {
+  display: block;
+  color: #b9b6d3;
+  font-size: 0.75rem;
+  text-align: center;
+  line-height: 155%;
+  margin-top: 1.0625rem;
+}
+
+main form small a {
+  color: #ff7a7a;
+  text-decoration: none;
+  font-weight: 500;
+}
+/*# sourceMappingURL=styles.css.map */
